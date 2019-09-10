@@ -79,7 +79,8 @@
     </div>
 
     <p>abstract     class
-    <strong>AbstractCollection</strong>
+    <strong>AbstractCollection</strong>        implements
+        <a target="_blank" href="http://php.net/Iterator">Iterator</a>, <a target="_blank" href="http://php.net/Countable">Countable</a>
 </p>
 
         
@@ -160,43 +161,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_toArray">toArray</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed|null
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_get">get</a>(int $index)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    int
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_count">count</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_toJson">toJson</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -218,7 +197,27 @@
                     int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getLastIndex">getLastIndex</a>()
+                    <a href="#method_position">position</a>()
+        
+                                            <p>Return the current position of the index</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>()
+        
+                                            <p>Move index to first position and return current element</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(int $index)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -239,29 +238,21 @@
                     int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_position">position</a>()
+                    <a href="#method_count">count</a>()
         
-                                            <p>Return the current position of the index</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed|null
+                    int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_current">current</a>()
+                    <a href="#method_getLastIndex">getLastIndex</a>()
         
-                                            <p>Return the current object</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed|null
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_first">first</a>()
-        
-                                            <p>Move index to first position and return current element</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -274,6 +265,57 @@
                                             <p>Move index at the end of collection and return current element</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_current">current</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_next">next</a>()
+        
+                                            <p>Move index to next position and return current element</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_key">key</a>()
+        
+                                            <p>Return current key/index</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_valid">valid</a>()
+        
+                                            <p>Return current key/index</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rewind">rewind</a>()
+        
+                                            <p>Move index to first position and return current element</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -282,7 +324,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 34</div>
+        <div class="location">at         line 35</div>
         <code>                    
     <strong>__construct</strong>(array|null $items = [])
         </code>
@@ -313,7 +355,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setItems">
-        <div class="location">at         line 44</div>
+        <div class="location">at         line 46</div>
         <code>            protected        <a href="../../../Biscolab/GoogleMaps/Abstracts/AbstractCollection.html"><abbr title="Biscolab\GoogleMaps\Abstracts\AbstractCollection">AbstractCollection</abbr></a>
     <strong>setItems</strong>(array|null $items = [])
         </code>
@@ -351,7 +393,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addItem">
-        <div class="location">at         line 60</div>
+        <div class="location">at         line 63</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Abstracts/AbstractCollection.html"><abbr title="Biscolab\GoogleMaps\Abstracts\AbstractCollection">AbstractCollection</abbr></a>
     <strong>addItem</strong>($item)
         </code>
@@ -389,7 +431,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseItem">
-        <div class="location">at         line 73</div>
+        <div class="location">at         line 77</div>
         <code>            protected        mixed
     <strong>parseItem</strong>($item)
         </code>
@@ -426,8 +468,36 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_toJson">
+        <div class="location">at         line 86</div>
+        <code>                    string
+    <strong>toJson</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">at         line 81</div>
+        <div class="location">at         line 95</div>
         <code>                    array
     <strong>toArray</strong>()
         </code>
@@ -454,8 +524,96 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at         line 104</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_position">
+        <div class="location">at         line 115</div>
+        <code>                    int
+    <strong>position</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the current position of the index</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">at         line 126</div>
+        <code>                    mixed|null
+    <strong>first</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Move index to first position and return current element</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         line 91</div>
+        <div class="location">at         line 137</div>
         <code>                    mixed|null
     <strong>get</strong>(int $index)
         </code>
@@ -492,120 +650,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_count">
-        <div class="location">at         line 99</div>
-        <code>                    int
-    <strong>count</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_toJson">
-        <div class="location">at         line 107</div>
-        <code>                    string
-    <strong>toJson</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___toString">
-        <div class="location">at         line 115</div>
-        <code>                    string
-    <strong>__toString</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getLastIndex">
-        <div class="location">at         line 123</div>
-        <code>                    int
-    <strong>getLastIndex</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_seek">
-        <div class="location">at         line 137</div>
+        <div class="location">at         line 150</div>
         <code>                    mixed|null
     <strong>seek</strong>(int|null $index = 0)
         </code>
@@ -644,18 +690,16 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_position">
-        <div class="location">at         line 149</div>
+                    <h3 id="method_count">
+        <div class="location">at         line 161</div>
         <code>                    int
-    <strong>position</strong>()
+    <strong>count</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Return the current position of the index</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -674,55 +718,23 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_current">
-        <div class="location">at         line 159</div>
-        <code>                    mixed|null
-    <strong>current</strong>()
+                    <h3 id="method_getLastIndex">
+        <div class="location">at         line 170</div>
+        <code>                    int
+    <strong>getLastIndex</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Return the current object</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_first">
-        <div class="location">at         line 169</div>
-        <code>                    mixed|null
-    <strong>first</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Move index to first position and return current element</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed|null</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>
@@ -735,7 +747,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_last">
-        <div class="location">at         line 179</div>
+        <div class="location">at         line 183</div>
         <code>                    mixed|null
     <strong>last</strong>()
         </code>
@@ -746,6 +758,154 @@
 
                     <div class="method-description">
                                     <p>Move index at the end of collection and return current element</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_current">
+        <div class="location">at         line 193</div>
+        <code>                    mixed|null
+    <strong>current</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_next">
+        <div class="location">at         line 204</div>
+        <code>                    mixed|null
+    <strong>next</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Move index to next position and return current element</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_key">
+        <div class="location">at         line 215</div>
+        <code>                    mixed|null
+    <strong>key</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return current key/index</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_valid">
+        <div class="location">at         line 226</div>
+        <code>                    mixed|null
+    <strong>valid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return current key/index</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewind">
+        <div class="location">at         line 237</div>
+        <code>                    mixed|null
+    <strong>rewind</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Move index to first position and return current element</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

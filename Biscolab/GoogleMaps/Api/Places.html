@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Biscolab\GoogleMaps\Api\Geocoding | Google Maps PHP</title>
+    <title>Biscolab\GoogleMaps\Api\Places | Google Maps PHP</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Biscolab_GoogleMaps_Api_Geocoding" data-root-path="../../../">
+    <body id="class" data-name="class:Biscolab_GoogleMaps_Api_Places" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,27 +66,27 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Biscolab.html">Biscolab</a></li><li class="backslash">\</li><li><a href="../../../Biscolab/GoogleMaps.html">GoogleMaps</a></li><li class="backslash">\</li><li><a href="../../../Biscolab/GoogleMaps/Api.html">Api</a></li><li class="backslash">\</li><li>Geocoding</li>
+                        <li><a href="../../../Biscolab.html">Biscolab</a></li><li class="backslash">\</li><li><a href="../../../Biscolab/GoogleMaps.html">GoogleMaps</a></li><li class="backslash">\</li><li><a href="../../../Biscolab/GoogleMaps/Api.html">Api</a></li><li class="backslash">\</li><li>Places</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            Geocoding
+            Places
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>Geocoding</strong>        extends <a href="../../../Biscolab/GoogleMaps/Abstracts/Api.html"><abbr title="Biscolab\GoogleMaps\Abstracts\Api">Api</abbr></a>
+    <strong>Places</strong>        extends <a href="../../../Biscolab/GoogleMaps/Abstracts/Api.html"><abbr title="Biscolab\GoogleMaps\Abstracts\Api">Api</abbr></a>
 </p>
 
         
     
 
             <div class="description">
-            <p>Class Geocoding</p>                                </div>
+            <p>Class Places</p>                                </div>
     
     
             <h2>Constants</h2>
@@ -268,7 +268,7 @@
                     <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getByAddress">getByAddress</a>(string $literal_address)
+                    <a href="#method_findPlaceByText">findPlaceByText</a>(string $query, array|null $params = [], array|null $fields = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -279,7 +279,17 @@
                     <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getReverse">getReverse</a>(<a href="../../../Biscolab/GoogleMaps/Object/LatLng.html"><abbr title="Biscolab\GoogleMaps\Object\LatLng">LatLng</abbr></a> $latlng)
+                    <a href="#method_findPlace">findPlace</a>(array $params)
+        
+                                            <p>Find Places requests</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeApiCall">makeApiCall</a>(array $params, string $endpoint)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -290,10 +300,52 @@
                     <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getByPlaceId">getByPlaceId</a>(string $place_id)
+                    <a href="#method_findPlaceByPhoneNumber">findPlaceByPhoneNumber</a>(string $number, array|null $params = [], array|null $fields = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findNearbyPlaceByRadius">findNearbyPlaceByRadius</a>(<a href="../../../Biscolab/GoogleMaps/Object/Location.html"><abbr title="Biscolab\GoogleMaps\Object\Location">Location</abbr></a> $location, int $radius, array|null $params = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findNearbyPlace">findNearbyPlace</a>(array $params)
+        
+                                            <p>Nearby Search requests</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findNearbyPlaceByDistance">findNearbyPlaceByDistance</a>(<a href="../../../Biscolab/GoogleMaps/Object/Location.html"><abbr title="Biscolab\GoogleMaps\Object\Location">Location</abbr></a> $location, array $params)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_textSearch">textSearch</a>(string $query, array|null $params = [])
+        
+                                            <p>Nearby Search requests</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -664,10 +716,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getByAddress">
-        <div class="location">at         line 43</div>
+                    <h3 id="method_findPlaceByText">
+        <div class="location">at         line 53</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
-    <strong>getByAddress</strong>(string $literal_address)
+    <strong>findPlaceByText</strong>(string $query, array|null $params = [], array|null $fields = [])
         </code>
     </h3>
     <div class="details">
@@ -680,7 +732,131 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$literal_address</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://developers.google.com/places/web-service/search#FindPlaceRequests">https://developers.google.com/places/web-service/search#FindPlaceRequests</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findPlace">
+        <div class="location">at         line 79</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+    <strong>findPlace</strong>(array $params)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find Places requests</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>GoogleMapsRequestFields::INPUT required</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Biscolab/GoogleMaps/Exception/InvalidArgumentException.html"><abbr title="Biscolab\GoogleMaps\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://developers.google.com/places/web-service/search#FindPlaceRequests">https://developers.google.com/places/web-service/search#FindPlaceRequests</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeApiCall">
+        <div class="location">at         line 101</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+    <strong>makeApiCall</strong>(array $params, string $endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$endpoint</td>
                 <td></td>
             </tr>
             </table>
@@ -702,10 +878,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getReverse">
-        <div class="location">at         line 56</div>
+                    <h3 id="method_findPlaceByPhoneNumber">
+        <div class="location">at         line 114</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
-    <strong>getReverse</strong>(<a href="../../../Biscolab/GoogleMaps/Object/LatLng.html"><abbr title="Biscolab\GoogleMaps\Object\LatLng">LatLng</abbr></a> $latlng)
+    <strong>findPlaceByPhoneNumber</strong>(string $number, array|null $params = [], array|null $fields = [])
         </code>
     </h3>
     <div class="details">
@@ -717,8 +893,18 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Biscolab/GoogleMaps/Object/LatLng.html"><abbr title="Biscolab\GoogleMaps\Object\LatLng">LatLng</abbr></a></td>
-                <td>$latlng</td>
+                <td>string</td>
+                <td>$number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$fields</td>
                 <td></td>
             </tr>
             </table>
@@ -740,10 +926,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getByPlaceId">
-        <div class="location">at         line 69</div>
+                    <h3 id="method_findNearbyPlaceByRadius">
+        <div class="location">at         line 137</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
-    <strong>getByPlaceId</strong>(string $place_id)
+    <strong>findNearbyPlaceByRadius</strong>(<a href="../../../Biscolab/GoogleMaps/Object/Location.html"><abbr title="Biscolab\GoogleMaps\Object\Location">Location</abbr></a> $location, int $radius, array|null $params = [])
         </code>
     </h3>
     <div class="details">
@@ -755,8 +941,18 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$place_id</td>
+                <td><a href="../../../Biscolab/GoogleMaps/Object/Location.html"><abbr title="Biscolab\GoogleMaps\Object\Location">Location</abbr></a></td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$radius</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$params</td>
                 <td></td>
             </tr>
             </table>
@@ -773,6 +969,174 @@
 
             
             
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findNearbyPlace">
+        <div class="location">at         line 162</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+    <strong>findNearbyPlace</strong>(array $params)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Nearby Search requests</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Biscolab/GoogleMaps/Exception/InvalidArgumentException.html"><abbr title="Biscolab\GoogleMaps\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://developers.google.com/places/web-service/search#PlaceSearchRequests">https://developers.google.com/places/web-service/search#PlaceSearchRequests</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findNearbyPlaceByDistance">
+        <div class="location">at         line 208</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+    <strong>findNearbyPlaceByDistance</strong>(<a href="../../../Biscolab/GoogleMaps/Object/Location.html"><abbr title="Biscolab\GoogleMaps\Object\Location">Location</abbr></a> $location, array $params)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Biscolab/GoogleMaps/Object/Location.html"><abbr title="Biscolab\GoogleMaps\Object\Location">Location</abbr></a></td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_textSearch">
+        <div class="location">at         line 230</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a>
+    <strong>textSearch</strong>(string $query, array|null $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Nearby Search requests</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResultsCollection.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResultsCollection">GoogleMapsResultsCollection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Biscolab/GoogleMaps/Exception/InvalidArgumentException.html"><abbr title="Biscolab\GoogleMaps\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://developers.google.com/places/web-service/search#TextSearchRequests">https://developers.google.com/places/web-service/search#TextSearchRequests</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
                     </div>
     </div>
 

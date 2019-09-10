@@ -106,7 +106,7 @@
                                         protected                                        array
                 </td>
                 <td>$results</td>
-                <td class="last"></td>
+                <td class="last">contains an array of places, with information about each.</td>
                 <td></td>
             </tr>
                     <tr>
@@ -114,7 +114,7 @@
                                         protected                                        string
                 </td>
                 <td>$status</td>
-                <td class="last"></td>
+                <td class="last">contains metadata on the request.</td>
                 <td></td>
             </tr>
                     <tr>
@@ -135,9 +135,25 @@
             </tr>
                     <tr>
                 <td class="type" id="property_http_status_code">
-                                        protected                                        int
+                                        protected                                        null|array
                 </td>
                 <td>$http_status_code</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_html_attributions">
+                                        protected                                        null|array
+                </td>
+                <td>$html_attributions</td>
+                <td class="last">may contain a set of attributions about this listing which must be displayed to the user (some listings may not have attribution).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_next_page_token">
+                                        protected                                        null|string
+                </td>
+                <td>$next_page_token</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -181,42 +197,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_checkHttpStatusCode">checkHttpStatusCode</a>()
-        
-                                            <p>Check HTTP status code (silent/No exceptions!)</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_toArray">toArray</a>(string $json_response)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getResults">getResults</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Biscolab\GoogleMaps\Http\$this">$this</abbr>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setResults">setResults</a>(array $results)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -239,6 +223,38 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setStatus">setStatus</a>(string $status)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkHttpStatusCode">checkHttpStatusCode</a>()
+        
+                                            <p>Check HTTP status code (silent/No exceptions!)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResults">getResults</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Biscolab\GoogleMaps\Http\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResults">setResults</a>(array $results)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -299,6 +315,50 @@
                                     </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHtmlAttributions">getHtmlAttributions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHtmlAttributions">setHtmlAttributions</a>(array|null $html_attributions)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNextPageToken">getNextPageToken</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNextPageToken">setNextPageToken</a>($next_page_token)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -307,7 +367,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 60</div>
+        <div class="location">at         line 83</div>
         <code>                    
     <strong>__construct</strong>(<abbr title="GuzzleHttp\Psr7\Response">Response</abbr> $response)
         </code>
@@ -338,7 +398,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setResponse">
-        <div class="location">at         line 74</div>
+        <div class="location">at         line 98</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
     <strong>setResponse</strong>(<abbr title="GuzzleHttp\Psr7\Response">Response</abbr> $response)
         </code>
@@ -376,7 +436,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseResponse">
-        <div class="location">at         line 87</div>
+        <div class="location">at         line 112</div>
         <code>            protected        <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
     <strong>parseResponse</strong>()
         </code>
@@ -416,38 +476,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_checkHttpStatusCode">
-        <div class="location">at         line 119</div>
-        <code>            protected        int
-    <strong>checkHttpStatusCode</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Check HTTP status code (silent/No exceptions!)</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">at         line 131</div>
+        <div class="location">at         line 164</div>
         <code>                    array
     <strong>toArray</strong>(string $json_response)
         </code>
@@ -484,74 +514,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getResults">
-        <div class="location">at         line 141</div>
-        <code>                    array
-    <strong>getResults</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setResults">
-        <div class="location">at         line 151</div>
-        <code>                    <abbr title="Biscolab\GoogleMaps\Http\$this">$this</abbr>
-    <strong>setResults</strong>(array $results)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$results</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Biscolab\GoogleMaps\Http\$this">$this</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getStatus">
-        <div class="location">at         line 161</div>
+        <div class="location">at         line 175</div>
         <code>                    string
     <strong>getStatus</strong>()
         </code>
@@ -579,7 +543,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setStatus">
-        <div class="location">at         line 171</div>
+        <div class="location">at         line 186</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
     <strong>setStatus</strong>(string $status)
         </code>
@@ -616,8 +580,104 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_checkHttpStatusCode">
+        <div class="location">at         line 198</div>
+        <code>            protected        int
+    <strong>checkHttpStatusCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check HTTP status code (silent/No exceptions!)</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResults">
+        <div class="location">at         line 209</div>
+        <code>                    array
+    <strong>getResults</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResults">
+        <div class="location">at         line 220</div>
+        <code>                    <abbr title="Biscolab\GoogleMaps\Http\$this">$this</abbr>
+    <strong>setResults</strong>(array $results)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$results</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Biscolab\GoogleMaps\Http\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getArrayResponse">
-        <div class="location">at         line 181</div>
+        <div class="location">at         line 231</div>
         <code>                    array
     <strong>getArrayResponse</strong>()
         </code>
@@ -645,7 +705,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setArrayResponse">
-        <div class="location">at         line 191</div>
+        <div class="location">at         line 242</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
     <strong>setArrayResponse</strong>(array $array_response)
         </code>
@@ -683,7 +743,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getErrorMessage">
-        <div class="location">at         line 201</div>
+        <div class="location">at         line 253</div>
         <code>                    mixed
     <strong>getErrorMessage</strong>()
         </code>
@@ -711,7 +771,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setErrorMessage">
-        <div class="location">at         line 211</div>
+        <div class="location">at         line 264</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
     <strong>setErrorMessage</strong>($error_message)
         </code>
@@ -749,7 +809,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getHttpStatusCode">
-        <div class="location">at         line 221</div>
+        <div class="location">at         line 275</div>
         <code>                    int
     <strong>getHttpStatusCode</strong>()
         </code>
@@ -765,6 +825,138 @@
                     <table class="table table-condensed">
         <tr>
             <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHtmlAttributions">
+        <div class="location">at         line 284</div>
+        <code>                    array|null
+    <strong>getHtmlAttributions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHtmlAttributions">
+        <div class="location">at         line 295</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
+    <strong>setHtmlAttributions</strong>(array|null $html_attributions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|null</td>
+                <td>$html_attributions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextPageToken">
+        <div class="location">at         line 306</div>
+        <code>                    string
+    <strong>getNextPageToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNextPageToken">
+        <div class="location">at         line 317</div>
+        <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a>
+    <strong>setNextPageToken</strong>($next_page_token)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$next_page_token</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsResponse.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsResponse">GoogleMapsResponse</abbr></a></td>
             <td></td>
         </tr>
     </table>

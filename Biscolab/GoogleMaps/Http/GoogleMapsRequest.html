@@ -90,6 +90,19 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_endpoint">
+                                        protected                                        string
+                </td>
+                <td>$endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -99,7 +112,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $params = [])
+                    <a href="#method___construct">__construct</a>(array $params = [], string|null $endpoint = null)
         
                                             <p>GoogleMapsRequest constructor.</p>                </div>
                 <div class="col-md-2"></div>
@@ -109,7 +122,7 @@
                     <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsRequest.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsRequest">GoogleMapsRequest</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addParam">addParam</a>(string $param_name, <abbr title="Biscolab\GoogleMaps\Object\AbstractObject">AbstractObject</abbr> $param_value)
+                    <a href="#method_setParam">setParam</a>(string $param_name, mixed $param_value)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -126,6 +139,28 @@
                                     </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParams">getParams</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEndpoint">getEndpoint</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -134,9 +169,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 31</div>
+        <div class="location">at         line 37</div>
         <code>                    
-    <strong>__construct</strong>(array $params = [])
+    <strong>__construct</strong>(array $params = [], string|null $endpoint = null)
         </code>
     </h3>
     <div class="details">
@@ -154,6 +189,11 @@
                 <td>$params</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$endpoint</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -164,10 +204,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_addParam">
-        <div class="location">at         line 46</div>
+                    <h3 id="method_setParam">
+        <div class="location">at         line 55</div>
         <code>                    <a href="../../../Biscolab/GoogleMaps/Http/GoogleMapsRequest.html"><abbr title="Biscolab\GoogleMaps\Http\GoogleMapsRequest">GoogleMapsRequest</abbr></a>
-    <strong>addParam</strong>(string $param_name, <abbr title="Biscolab\GoogleMaps\Object\AbstractObject">AbstractObject</abbr> $param_value)
+    <strong>setParam</strong>(string $param_name, mixed $param_value)
         </code>
     </h3>
     <div class="details">
@@ -184,7 +224,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Biscolab\GoogleMaps\Object\AbstractObject">AbstractObject</abbr></td>
+                <td>mixed</td>
                 <td>$param_value</td>
                 <td></td>
             </tr>
@@ -208,7 +248,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getQuery">
-        <div class="location">at         line 56</div>
+        <div class="location">at         line 66</div>
         <code>                    string
     <strong>getQuery</strong>()
         </code>
@@ -224,6 +264,62 @@
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParams">
+        <div class="location">at         line 81</div>
+        <code>                    array
+    <strong>getParams</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEndpoint">
+        <div class="location">at         line 90</div>
+        <code>                    string|null
+    <strong>getEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
